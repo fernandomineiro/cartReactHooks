@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { isInCart } from "../helpers/cartHelpers";
-import { formatCurrency } from "../helpers/formatCurrency";
+// import { formatCurrency } from "../helpers/formatCurrency";
 import { productsMock } from "../mocks/productsMock";
 import { useCart, useCartDispatch } from "../store/cartContext";
 import { CART_ACTIONS } from "../store/cartReducer";
