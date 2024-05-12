@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { formatCurrency } from "../helpers/formatCurrency";
+
 import { useCart, useCartDispatch } from "../store/cartContext";
 import { CartItem } from "../types";
 import TrashIcon from "../assets/trash.svg";
@@ -89,7 +89,7 @@ export const Cart = () => {
                 </button>
               </td>
               <td className="product-data-cell">
-                {formatCurrency(cartItem.product.price * cartItem.quantity)}
+                R$ {(cartItem.product.price * cartItem.quantity)}
               </td>
             </tr>
           ))}
